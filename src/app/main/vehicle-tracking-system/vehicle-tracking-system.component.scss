@@ -1,0 +1,32 @@
+agm-map {
+    height: 100vh;
+}
+
+mat-card {
+    width: 100%;
+    height: 100%;
+    border: 1px solid grey;
+}
+
+th,
+td {
+    text-align: center;
+}
+
+th {
+    padding-right: 1%;
+}
+
+table {
+    border: solid 1px green;
+    margin-top: 5%;
+}
+
+table,
+mat-card {
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+}

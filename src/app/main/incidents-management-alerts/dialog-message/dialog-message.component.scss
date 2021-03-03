@@ -1,0 +1,20 @@
+    input {
+        background-color: rgba(236, 225, 225, 0.425);
+        max-width: 80%;
+        border-radius: 2%;
+        padding: 5%;
+    }
+    
+    agm-map {
+        height: 40vh;
+        width: 40vw;
+    }
+    
+    textarea {
+        background-color: rgba(236, 225, 225, 0.425);
+        color: grey;
+    }
+    
+    mat-card {
+        border: 1px solid rgb(187, 184, 184);
+    }
