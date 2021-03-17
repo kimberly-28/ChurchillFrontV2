@@ -63,7 +63,7 @@ import { DialogFormKeyWordsComponent } from './main/incidents-management-alerts/
 import { DialogAlertComponent } from './main/incidents-management-alerts/dialog-twitter/dialog-alert/dialog-alert.component';
 import { DialogFormAlertComponent } from './main/incidents-management-alerts/dialog-twitter/dialog-alert/dialog-form-alert/dialog-form-alert.component';
 import { DialogRiskLevelComponent } from './main/incidents-management-alerts/dialog-twitter/dialog-risk-level/dialog-risk-level.component';
-import { DialogFormActionProtocolsComponent } from './main/incidents-management-alerts/dialog-twitter/dialog-action-protocols/dialog-form-action-protocols/dialog-form-action-protocols.component';
+import { DialogFormActionProtocolsComponent } from './main/incidents-management-alerts/dialog-twitter/dialog-action-protocols/dialog-form-action/dialog-form-action.component';
 
 const appRoutes: Routes = [
     {

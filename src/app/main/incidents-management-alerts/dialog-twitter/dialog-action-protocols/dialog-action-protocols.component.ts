@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogFormActionProtocolsComponent } from './dialog-form-action-protocols/dialog-form-action-protocols.component';
+import { DialogFormActionProtocolsComponent } from './dialog-form-action/dialog-form-action.component';
 
 @Component({
   selector: 'app-dialog-action-protocols',

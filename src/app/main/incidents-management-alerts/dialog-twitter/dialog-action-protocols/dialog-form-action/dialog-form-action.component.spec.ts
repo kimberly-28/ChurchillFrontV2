@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DialogFormActionProtocolsComponent } from './dialog-form-action-protocols.component';
+import { DialogFormActionProtocolsComponent } from './dialog-form-action.component';
 
 describe('DialogFormActionProtocolsComponent', () => {
   let component: DialogFormActionProtocolsComponent;
