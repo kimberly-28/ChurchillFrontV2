@@ -1,8 +1,9 @@
-import { getCurrencySymbol } from '@angular/common';
+
 import { Component, OnInit } from '@angular/core';
-import { DialogReportsComponent } from './dialog-reports/dialog-reports.component';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogMessageComponent } from './dialog-message/dialog-message.component';
+import { DialogTwitterComponent } from './dialog-twitter/dialog-twitter.component';
+
 
 @Component({
   selector: 'app-incidents-management-alerts',
@@ -19,6 +20,11 @@ export class IncidentsManagementAlertsComponent implements OnInit {
   }
   openDialog() {
     this.dialog.open(DialogMessageComponent);
+  }
+
+  openDialogTwitter() 
+  {
+    this.dialog.open(DialogTwitterComponent);
   }
 
 }

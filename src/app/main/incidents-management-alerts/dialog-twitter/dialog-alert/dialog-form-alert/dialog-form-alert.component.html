@@ -1,0 +1,43 @@
+<div style="width: 40vw; height: auto;">
+    <div fxLayoutAlign="end end">
+        <button mat-dialog-close style="border-radius: 10%; padding: 1%; border-color:blanchedalmond ; background-color: #ff322e; color: blanchedalmond;">X</button>
+    </div>
+
+    <div fxLayoutAlign="center center">
+        <h1>Nuevo Tipo de Alerta </h1>
+    </div>
+
+    <form autocomplete="off" class="formulario" style="margin-top: 5%;">
+        <div fxLayoutAlign="center center">
+            <mat-label>Tipo de Alerta</mat-label>
+            <input type="text" placeholder="Manifestación">
+        </div>
+        <div fxLayoutAlign="center center">
+            <mat-label>Nivel de Riesgo</mat-label>
+            <mat-form-field>
+                <mat-label fxlayoutAlign="end end "><b>Riesgo</b> </mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let Riesgo of riesgo " [value]="Riesgo.value ">
+                        {{Riesgo.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div fxLayoutAlign="center center">
+            <mat-label>Protocolo de Acción</mat-label>
+            <mat-form-field>
+                <mat-label fxlayoutAlign="end end "><b>Protocolo de Acción</b> </mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let Action of action " [value]="Action.value ">
+                        {{Action.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </form>
+
+    <div style="margin: 2%" fxLayoutAlign="center center">
+
+        <button mat-raised-button style="background: #00acee; padding: 1%; ">Agregar</button>
+    </div>
+</div>

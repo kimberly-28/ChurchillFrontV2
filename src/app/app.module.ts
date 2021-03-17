@@ -52,7 +52,18 @@ import { DialogReportsComponent } from './main/incidents-management-alerts/dialo
 
 import { ChartsModule } from 'ng2-charts';
 import { DialogMessageComponent } from './main/incidents-management-alerts/dialog-message/dialog-message.component';
-
+import { DialogTwitterComponent } from './main/incidents-management-alerts/dialog-twitter/dialog-twitter.component';
+import { DialogCuentasComponent } from './main/incidents-management-alerts/dialog-twitter/dialog-cuentas/dialog-cuentas.component';
+import { MatOptionModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
+import { DialogKeyWordsComponent } from './main/incidents-management-alerts/dialog-twitter/dialog-key-words/dialog-key-words.component';
+import { DialogActionProtocolsComponent } from './main/incidents-management-alerts/dialog-twitter/dialog-action-protocols/dialog-action-protocols.component';
+import { DialogFormAccountComponent } from './main/incidents-management-alerts/dialog-twitter/dialog-cuentas/dialog-form-account/dialog-form-account.component';
+import { DialogFormKeyWordsComponent } from './main/incidents-management-alerts/dialog-twitter/dialog-key-words/dialog-form-key-words/dialog-form-key-words.component';
+import { DialogAlertComponent } from './main/incidents-management-alerts/dialog-twitter/dialog-alert/dialog-alert.component';
+import { DialogFormAlertComponent } from './main/incidents-management-alerts/dialog-twitter/dialog-alert/dialog-form-alert/dialog-form-alert.component';
+import { DialogRiskLevelComponent } from './main/incidents-management-alerts/dialog-twitter/dialog-risk-level/dialog-risk-level.component';
+import { DialogFormActionProtocolsComponent } from './main/incidents-management-alerts/dialog-twitter/dialog-action-protocols/dialog-form-action-protocols/dialog-form-action-protocols.component';
 
 const appRoutes: Routes = [
     {
@@ -80,11 +91,29 @@ const appRoutes: Routes = [
         IncidentsManagementAlertsComponent,
         DialogReportsComponent,
         DialogMessageComponent,
+        DialogTwitterComponent,
+        DialogCuentasComponent,
+        DialogKeyWordsComponent,
+        DialogActionProtocolsComponent,
+        DialogFormAccountComponent,
+        DialogFormKeyWordsComponent,
+        DialogRiskLevelComponent,
+        DialogAlertComponent,
+        DialogFormAlertComponent,
+        DialogFormActionProtocolsComponent,
     ],
 
     entryComponents: [
         DialogReportsComponent,
         DialogMessageComponent,
+        DialogTwitterComponent,
+        DialogCuentasComponent,
+        DialogKeyWordsComponent,
+        DialogFormAccountComponent,
+        DialogFormKeyWordsComponent,
+        DialogFormAlertComponent,
+        DialogRiskLevelComponent,
+        DialogFormActionProtocolsComponent,
       ],
     imports     : [
         AppRoutingModule,
@@ -118,6 +147,8 @@ const appRoutes: Routes = [
         MatInputModule,
         MatInputModule,
         MatProgressBarModule,
+        MatOptionModule,
+        MatSelectModule,
         
         // Fuse modules
         FuseModule.forRoot(fuseConfig),

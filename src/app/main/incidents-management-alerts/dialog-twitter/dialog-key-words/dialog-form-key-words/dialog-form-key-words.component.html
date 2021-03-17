@@ -1,0 +1,59 @@
+<div style="width: auto; height: auto;">
+    <div fxLayoutAlign="end end">
+        <button mat-dialog-close style="border-radius: 10%; padding: 1%; border-color:blanchedalmond ; background-color: #ff322e; color: blanchedalmond;">X</button>
+    </div>
+
+    <div fxLayoutAlign="center center">
+        <h1>Nueva Palabra Clave </h1>
+    </div>
+
+    <form autocomplete="off" style="margin-top: 5%;">
+
+        <div fxLayoutAlign="center center">
+            <mat-label>Palabra</mat-label>
+            <input type="text" placeholder="Covid">
+        </div>
+
+        <div fxLayoutAlign="center center">
+            <mat-label>Tipo de Alerta</mat-label>
+
+            <mat-form-field>
+                <mat-label fxlayoutAlign="end end "><b>Alerta</b> </mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let alerta of foods " [value]="alerta.value ">
+                        {{alerta.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div fxLayoutAlign="center center">
+            <mat-label>Nivel de Riesgo</mat-label>
+            <mat-form-field>
+                <mat-label fxlayoutAlign="end end "><b>Riesgo</b> </mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let Riesgo of riesgo " [value]="Riesgo.value ">
+                        {{Riesgo.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div fxLayoutAlign="center center">
+            <mat-label>Protocolo de Acción</mat-label>
+            <mat-form-field>
+                <mat-label fxlayoutAlign="end end "><b>Protocolo de Acción</b> </mat-label>
+                <mat-select>
+                    <mat-option *ngFor="let Action of action " [value]="Action.value ">
+                        {{Action.viewValue}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </form>
+
+    <div style="margin: 5%" fxLayoutAlign="center center">
+
+        <button mat-raised-button style="background: #00acee; padding: 1%; ">Agregar</button>
+    </div>
+</div>

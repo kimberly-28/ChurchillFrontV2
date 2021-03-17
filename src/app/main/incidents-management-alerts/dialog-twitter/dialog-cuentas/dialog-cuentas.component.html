@@ -1,0 +1,131 @@
+<div style="width: 100%; height: auto; ">
+    <div fxLayoutAlign="end">
+        <button mat-dialog-close style="border-radius: 10%; border-color:blanchedalmond ; background-color: #ff322e; color: blanchedalmond;">X</button>
+    </div>
+
+    <h1 style="display: flex; justify-content: center;">Cuentas Verificadas</h1>
+
+    <mat-form-field style="width: 35%; margin: 2% ">
+        <mat-label fxlayoutAlign="end end ">Categoría</mat-label>
+        <mat-select>
+            <mat-option *ngFor="let food of foods " [value]="food.value ">
+                {{food.viewValue}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <div>
+        <table style="width: 100%; height: 60vh;">
+            <tbody style="width: 100%; height: 60vh;">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cuenta</th>
+                    <th>Tweeter ID</th>
+                    <th>Categoría</th>
+                    <th>Editar</th>
+                    <th>Eliminar</th>
+                </tr>
+                <tr>
+                    <td>METEOROLOGIA MEXICANA</td>
+                    <td>@METEOROLOGIAMEX</td>
+                    <td>343729336</td>
+                    <td>Meteorología</td>
+                    <td><button mat-raised-button style="margin: 5%; "><mat-icon style="color: rgb(48, 98, 141); ">edit</mat-icon></button> </td>
+                    <td><button mat-raised-button style="margin: 5%; "><mat-icon style="color: rgb(253, 23, 23); ">delete</mat-icon></button></td>
+                </tr>
+                <tr>
+                    <td>El Universal</td>
+                    <td>@El_Universal_Mx</td>
+                    <td>16676396</td>
+                    <td>Noticias</td>
+                    <td><button mat-raised-button style="margin: 5%; "><mat-icon style="color: rgb(48, 98, 141); ">edit</mat-icon></button> </td>
+                    <td><button mat-raised-button style="margin: 5%; "><mat-icon style="color: rgb(253, 23, 23); ">delete</mat-icon></button></td>
+                </tr>
+                <tr>
+                    <td>Sismológico Nacional</td>
+                    <td>@SSNMexico</td>
+                    <td>583442936</td>
+                    <td>Actividad sísmica en México</td>
+                    <td><button mat-raised-button style="margin: 5%; "><mat-icon style="color: rgb(48, 98, 141); ">edit</mat-icon></button> </td>
+                    <td><button mat-raised-button style="margin: 5%; "><mat-icon style="color: rgb(253, 23, 23); ">delete</mat-icon></button></td>
+                </tr>
+                <tr>
+                    <td>METEOROLOGIA MEXICANA</td>
+                    <td>@METEOROLOGIAMEX</td>
+                    <td>343729336</td>
+                    <td>Meteorología</td>
+                    <td><button mat-raised-button style="margin: 5%; "><mat-icon style="color: rgb(48, 98, 141); ">edit</mat-icon></button> </td>
+                    <td><button mat-raised-button style="margin: 5%; "><mat-icon style="color: rgb(253, 23, 23); ">delete</mat-icon></button></td>
+                </tr>
+                <tr>
+                    <td>El Universal</td>
+                    <td>@El_Universal_Mx</td>
+                    <td>16676396</td>
+                    <td>Noticias</td>
+                    <td><button mat-raised-button style="margin: 3%; "><mat-icon style="color: rgb(48, 98, 141); ">edit</mat-icon></button> </td>
+                    <td><button mat-raised-button style="margin: 3%; "><mat-icon style="color: rgb(253, 23, 23); ">delete</mat-icon></button></td>
+                </tr>
+                <tr>
+                    <td>Sismológico Nacional</td>
+                    <td>@SSNMexico</td>
+                    <td>583442936</td>
+                    <td>Atividad sísmica en México</td>
+                    <td><button mat-raised-button style="margin: 3%; "><mat-icon style="color: rgb(48, 98, 141); ">edit</mat-icon></button> </td>
+                    <td><button mat-raised-button style="margin: 3%; "><mat-icon style="color: rgb(253, 23, 23); ">delete</mat-icon></button></td>
+                </tr>
+                <tr>
+                    <td>METEOROLOGIA MEXICANA</td>
+                    <td>@METEOROLOGIAMEX</td>
+                    <td>343729336</td>
+                    <td>Meteorología</td>
+                    <td><button mat-raised-button style="margin: 3%; "><mat-icon style="color: rgb(48, 98, 141); ">edit</mat-icon></button> </td>
+                    <td><button mat-raised-button style="margin: 3%; "><mat-icon style="color: rgb(253, 23, 23); ">delete</mat-icon></button></td>
+                </tr>
+                <tr>
+                    <td>El Universal</td>
+                    <td>@El_Universal_Mx</td>
+                    <td>16676396</td>
+                    <td>Noticias</td>
+                    <td><button mat-raised-button style="margin: 3%; "><mat-icon style="color: rgb(48, 98, 141); ">edit</mat-icon></button> </td>
+                    <td><button mat-raised-button style="margin: 3%; "><mat-icon style="color: rgb(253, 23, 23); ">delete</mat-icon></button></td>
+                </tr>
+                <tr>
+                    <td>Sismológico Nacional</td>
+                    <td>@SSNMexico</td>
+                    <td>583442936</td>
+                    <td>Atividad sísmica en México</td>
+                    <td><button mat-raised-button style="margin: 3%; "><mat-icon style="color: rgb(48, 98, 141); ">edit</mat-icon></button> </td>
+                    <td><button mat-raised-button style="margin: 3%; "><mat-icon style="color: rgb(253, 23, 23); ">delete</mat-icon></button></td>
+                </tr>
+                <tr>
+                    <td>METEOROLOGIA MEXICANA</td>
+                    <td>@METEOROLOGIAMEX</td>
+                    <td>343729336</td>
+                    <td>Meteorología</td>
+                    <td><button mat-raised-button style="margin: 3%; "><mat-icon style="color: rgb(48, 98, 141); ">edit</mat-icon></button> </td>
+                    <td><button mat-raised-button style="margin: 3%; "><mat-icon style="color: rgb(253, 23, 23); ">delete</mat-icon></button></td>
+                </tr>
+                <tr>
+                    <td>El Universal</td>
+                    <td>@El_Universal_Mx</td>
+                    <td>16676396</td>
+                    <td>Noticias</td>
+                    <td><button mat-raised-button style="margin: 3%; "><mat-icon style="color: rgb(48, 98, 141); ">edit</mat-icon></button> </td>
+                    <td><button mat-raised-button style="margin: 3%; "><mat-icon style="color: rgb(253, 23, 23); ">delete</mat-icon></button></td>
+                </tr>
+                <tr>
+                    <td>Sismológico Nacional</td>
+                    <td>@SSNMexico</td>
+                    <td>583442936</td>
+                    <td>Atividad sísmica en México</td>
+                    <td><button mat-raised-button style="margin: 3%; "><mat-icon style="color: rgb(48, 98, 141); ">edit</mat-icon></button> </td>
+                    <td><button mat-raised-button style="margin: 3%; "><mat-icon style="color: rgb(253, 23, 23); ">delete</mat-icon></button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div fxLayoutAlign="end end; " style="margin-top: 3%; ">
+        <button mat-raised-button style="background: #00acee; " (click)="openDialogFormAccount() ">Agregar Cuenta</button>
+    </div>
+</div>
